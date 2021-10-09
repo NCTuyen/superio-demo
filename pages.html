@@ -157,8 +157,61 @@
                 </ul>
             </div>
             <div class="col-4 header__right">
-                <a href="#">Login / Register</a>
-                <a href="#" class="btn-blue">Job Post</a>
+                <a href="#" onclick="openSignIn()">Login / Register</a>
+                <a href="#" onclick="openSignIn()" class="btn-blue">Job Post</a>
+            </div>
+
+            <div class="bgr-dark" id="Visible">
+                <div class="login" id="openSignIn">
+                    <div class="flex">
+                        <h3>Login to superio</h3>
+                        <i class="fal fa-times" onclick="openSignIn()"></i>
+                    </div>
+                    <div class="login-guide">
+                        <p>Username: <strong>candidate</strong> or <strong> employer</strong></p>
+                        <p>Password: <strong>demo</strong></p>
+                    </div>
+                    <form>
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Username or email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username or email">
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label font14" for="exampleCheck1">Keep me signed in</label>
+                            <a href="#" class="lost-pass font14">Lost Your Password?</a>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                    <div class="or">
+                        <span>Or</span>
+                    </div>
+                    <div class="social">
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/" class="social-link fb"><i class="fab fa-facebook-f"></i>Facebook</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.google.com.vn/?hl=vi" class="social-link gg"><i class="fab fa-google"></i>Google</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.linkedin.com/feed/" class="social-link lk"><i class="fab fa-linkedin-in"></i>Linkedin</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://twitter.com/?lang=vi" class="social-link tt"><i class="fab fa-twitter"></i>Twitter</a>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="login-footer">
+                        Don't you have an account?<a href="#"> Register</a> 
+                    </div>
+                </div>
             </div>
         </div>
     </header>
