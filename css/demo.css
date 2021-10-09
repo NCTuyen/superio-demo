@@ -170,6 +170,219 @@ header {
   background: #0909c5;
 }
 
+.bgr-dark {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.login {
+  position: absolute;
+  padding: 40px 40px 20px;
+  border-radius: 5px;
+  width: 600px;
+  max-width: 85%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+  background: #fff;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.login h3 {
+  font-size: 24px;
+}
+
+.login-guide {
+  background: #ccf5ef;
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 14px;
+  line-height: 2;
+  color: #757575;
+  margin: 30px 0;
+}
+
+.login-guide p {
+  margin: 0;
+}
+
+.login-guide strong {
+  color: #27ceb4;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.login form .form-control {
+  padding: 10px 25px;
+  background: #F0F5F7;
+}
+
+.login form .form-group {
+  margin-bottom: 30px;
+}
+
+.login .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login .flex i {
+  font-size: 24px;
+}
+
+.login .flex i:hover {
+  cursor: pointer;
+}
+
+.login .lost-pass {
+  float: right;
+  text-decoration: none;
+}
+
+.login .font14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.login .btn-primary {
+  width: 100%;
+  padding: 13px 12px;
+}
+
+.login .or {
+  text-align: center;
+  width: 100% !important;
+  margin: 20px 0;
+  position: relative;
+}
+
+.login .or::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  background: #e7edf9;
+}
+
+.login .or span {
+  color: #757575;
+  position: relative;
+}
+
+.login .social .row {
+  margin-bottom: 20px;
+}
+
+.login .social .col {
+  text-align: center;
+}
+
+.login .social i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.login .social-link {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.login .social .fb {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.login .social .fb:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+.login .social .gg {
+  color: #D93025;
+  border-color: #D93025;
+}
+
+.login .social .gg:hover {
+  background: #D93025;
+  color: #fff;
+}
+
+.login .social .lk {
+  color: #0077B5;
+  border-color: #0077B5;
+}
+
+.login .social .lk:hover {
+  background: #0077B5;
+  color: #fff;
+}
+
+.login .social .tt {
+  color: #55acee;
+  border-color: #55acee;
+}
+
+.login .social .tt:hover {
+  background: #55acee;
+  color: #fff;
+}
+
+.login-footer {
+  text-align: center;
+  font-size: 15px;
+  color: #757575;
+  font-weight: 400;
+}
+
+.login-footer a {
+  color: #1967d2;
+  text-decoration: none;
+}
+
+.open-signin {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,9 +429,9 @@ header {
 }
 
 .job-search input {
-  border: none;
-  background: none;
+  border: #fff;
   padding-right: 60px;
+  outline: #fff;
 }
 
 .btn-main {
@@ -558,6 +771,12 @@ hr {
   font-size: 18px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  color: black;
+  text-decoration: none;
+}
+
+.jobs-text a:last-child {
+  color: #4785db;
 }
 
 .jobs-text span {
@@ -931,6 +1150,7 @@ hr {
 .footer img {
   width: 170px;
   height: 60px;
+  margin-bottom: 10px;
 }
 
 .footer h5 {

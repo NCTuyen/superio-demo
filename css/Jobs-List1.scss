@@ -19,128 +19,6 @@ $border:rgb(224, 238, 247);
     margin-left: auto;
     margin-right: auto;
 }
-.l-text {
-    color: $lighttext;
-}
-header {
-    background-image: url(../img/bg-slider1.jpg);
-}
-.header {
-    padding: 0;
-}
-.header__left {
-    display: flex;
-    padding: 10px 0;
-    .bars-re {
-        display: none;
-        margin-right: 20px;
-    }
-    img {
-        max-width: 155px;
-        height: 60px;
-        margin-left: 15px;
-    }
-    ul {
-        display: flex;
-        justify-content: space-between;
-        padding-left: 10px;
-        padding-top: 5px;
-    }
-    li {
-        list-style-type: none;
-        padding: 15px; 
-        position: relative;
-        &:hover {
-            .sub-menu {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-    }
-    i {
-        margin-left: 5px;
-    }
-}
-
-.sub-menu {
-    min-width: 350px;
-    background: #fff;
-    visibility: hidden;
-    position: absolute;
-    border-top:2px solid $blue;
-    top: 50px;
-    left: 28px;
-    transition: all 0.3s;
-    opacity: 0;
-    z-index: 99;
-    ul {
-        display: block;
-        padding: 0;
-        a {
-            color: black;
-            text-decoration: none;
-        }
-        
-    }
-    li {
-        padding: 15px 0 0 0;
-        
-        &:hover {
-            a{
-                color: $lightblue;
-            }   
-        }
-        a {
-            color: rgb(117, 117, 117);
-        }
-    }
-    
-    &:before {
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent transparent $blue;
-        content: '';
-        position: absolute;
-        bottom: 100%;
-        left:25px;
-    }  
-}
-.find-width {
-    min-width: 550px ;
-    .no-title {
-        margin-top: 25px;
-    } 
-}
-header {
-    background: #fff;
-}
-.header__right {
-    margin: 30px 0;
-    text-align: right;
-    a {
-        padding: 15px 35px;
-        margin-left:60px;
-        background: $blueWhite;
-        color: $blue;
-        text-decoration: none;
-        border-radius: 10px;
-        transition: all 0.3s;
-        &:hover {
-            background: $blue;
-            color: #fff;
-        }
-    }
-    .btn-blue {
-        padding: 15px 30px;
-        background: $blue;
-        color: #fff;
-        margin-left:10px;
-        transition: all 0.3s;
-        &:hover {
-            background: rgb(9, 9, 197);
-        }
-    }    
-}
 
 .title {
     background: #f3f6fb;
@@ -173,6 +51,9 @@ header {
         }
         input {
             border: #fff;
+            padding:5px 20px;
+            outline:#fff;
+            margin-right: 20px;
         }
         .bgr {
             background: #fff;
@@ -334,71 +215,117 @@ input:checked + .slider:before {
         width: 100%;
         border-color: $lightblue;
     }
-}
+}                       // css content left
 
-.footer {
-    padding-top: 100px;
-    img {
-        width: 170px;
-        height: 60px;
-    }
-    h5 {
-        font-size: 18px;
-    }
-    span {
-        color: $lightblue;
 
-    }
-    ul {
-        padding: 0;
-        li {
-            font-size: 14px;
-            list-style-type: none;
-            color: $lighttext;
-            margin: 10px 0;
-        }
-    }
-}
-.option {
-    li {
-        position: relative;
-        transition: all 0.6s;
-        &:hover{
-            cursor: pointer;
-            padding-left: 20px;
-            color: $blue;
-            &::before {
-                width: 15px;
-            } 
-        }
-        &::before {
-            content: "";
-            width: 0px;
-            height: 2px;
-            background: $lightblue;
-            position: absolute;
-            left: 0;
-            top:50%;
-            transition: all 0.6s;
-        }
-    }
-
-    
-}  
-
-footer {
+.product-header {
     display: flex;
     justify-content: space-between;
-    padding: 0 !important;
-    color: $lighttext;
-    font-size: 14px;
-    margin: 100px 0 50px!important;
-    i {
-        margin-left: 30px;
-        transition: all 0.3s;
-        &:hover {
-            color: #b07bb4;
-            cursor: pointer;
+    .dropdown {
+        display: inline-block;
+        .btn-secondary {
+            background: #f0f5f7;
+            border: #f0f5f7;
+            color: #757575;
+            border-radius: 5px;
+            outline: 1px solid $lightblue
+            
+        }
+        .btn-width150 {
+            width: 150px;
+            text-align: left;
+        }
+        .dropdown-toggle::after {
+            float: right;
+            margin-top: 10px;
         }
     }
 }
+
+.jobs {
+    display: flex;
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    position: relative;
+    &-img {
+        width: 10%;
+        margin-right: 20px;
+        img {
+            width: 52px;
+        } 
+    }
+    &-text {
+        width:90%
+    }
+    div:hover {
+        cursor: pointer;
+    }
+}
+.jobs-text {
+    text-align: left;
+    a {
+        font-size: 18px;
+        transition: all 0.3s;
+    }
+    span {
+        font-size: 13px;
+        color: rgb(50, 145, 63);
+    }
+    a:hover {
+        color: $lightblue !important;
+
+    }
+    .jobs-btn {
+        padding: 3px 20px;
+        background: $blueWhite;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 13px !important;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .btn-orange {
+        color: #F9AB00;
+        background: rgba(249,171,0,0.15);
+        &:hover {
+            color: #F9AB00 !important;
+        }
+    }
+}
+.mini-text {
+    div {
+        display: inline-block;
+        margin-right: 20px;
+        p {
+            display: inline-block;
+            margin-left: 10px;
+            color: $lighttext;
+            font-size: 14px;
+        }
+    }
+
+}
+
+.jobs-bookmark {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    img {
+        margin-top: 5px;
+    }
+    &:hover {
+        background: $blueWhite; 
+        border: 1px solid $border;
+    }
+}
+
+
+
+
+

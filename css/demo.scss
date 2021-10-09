@@ -146,7 +146,179 @@ header {
         }
     }    
 }
-
+.bgr-dark {
+    position:fixed;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    overflow: scroll;
+    visibility: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.visible {
+    visibility: visible;    //class js 
+    opacity: 1;
+}
+.login {
+    position: absolute;
+    padding: 40px 40px 20px;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 85%;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    background: #fff;
+    transform: translateY(-100%);
+    transition: all 0.6s;
+    opacity: 0;
+    h3 {
+        font-size: 24px;
+    }
+    &-guide {
+        background: #ccf5ef;
+        border-radius: 10px;
+        padding: 18px;
+        font-size: 14px;
+        line-height: 2;
+        color: $lighttext;
+        margin: 30px 0;
+        p {
+            margin: 0;
+        }
+        strong {
+            color: #27ceb4;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    form {
+        label {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .form-control {
+            padding: 10px 25px;
+            background: #F0F5F7;
+        }
+        .form-group {
+            margin-bottom: 30px;
+        }
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        i {
+            font-size: 24px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .lost-pass {
+        float: right;
+        text-decoration: none;
+    }
+    .font14 {
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
+    .btn-primary {
+        width: 100%;
+        padding: 13px 12px;
+    }
+    .or {
+        text-align: center;
+        width: 100% !important;
+        margin: 20px 0;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            left: 0;
+            background:$blueWhite;
+        }
+        span {
+            color: $lighttext;
+            position: relative;
+        }
+    }
+    .social {
+        .row {
+            margin-bottom: 20px;
+        }
+        .col {
+            text-align: center;
+        }
+        i {
+            font-size: 16px;
+            margin-right: 10px
+        }
+        &-link {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .fb {
+            color: #3b5998;
+            border-color: #3b5998;
+            &:hover {
+                background:#3b5998 ;
+                color: #fff;
+            }
+        }
+        .gg {
+            color: #D93025;
+            border-color: #D93025;
+            &:hover {
+                background:#D93025 ;
+                color: #fff;
+            }
+        }
+        .lk {
+            color: #0077B5;
+            border-color: #0077B5;
+            &:hover {
+                background:#0077B5 ;
+                color: #fff;
+            }
+        }
+        .tt {
+            color: #55acee;
+            border-color: #55acee;
+            &:hover {
+                background:#55acee ;
+                color: #fff;
+            }
+        }
+    }
+    &-footer {
+        text-align: center;
+        font-size: 15px;
+        color: $lighttext;
+        font-weight: 400;
+        a {
+            color:#1967d2 ;
+            text-decoration: none;
+        }
+    }
+}
+.open-signin {
+    transform: translateY(0);  //class js
+    opacity: 1;
+}
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -182,9 +354,9 @@ header {
         
     }
     input {
-        border: none;
-        background: none;
+        border:#fff;
         padding-right: 60px;
+        outline: #fff;
     }
 }
 .btn-main {
@@ -493,6 +665,11 @@ hr {
     a {
         font-size: 18px;
         transition: all 0.3s;
+        color: black;
+        text-decoration: none;
+    }
+    a:last-child {
+        color:$lightblue ;
     }
     span {
         font-size: 13px;
@@ -799,6 +976,7 @@ hr {
     img {
         width: 170px;
         height: 60px;
+        margin-bottom: 10px;
     }
     h5 {
         font-size: 18px;
