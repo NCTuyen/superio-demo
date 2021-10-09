@@ -1,0 +1,171 @@
+
+$blue: #1967d2;
+$lightblue: #4785db;
+$blueWhite:#e7edf9;
+$lighttext:rgb(117, 117, 117);
+$border:rgb(224, 238, 247);
+header {
+    background: #fff;
+}
+.employer {
+    .title {
+        text-align: center;
+        background: #f5f7fc;
+        padding: 50px 0;
+        h3 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+        span {
+            font-weight: normal;
+        }
+    }
+    .employer__content {
+        margin: 60px auto;
+    }
+    .bgr {
+        background: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        input {
+            padding: 10px;
+            border: #fff;
+            outline: #fff;
+        }
+    }
+    .drop {
+        .btn {
+            width: 100%;
+            text-align: left;
+            color: #757575;
+            background: #fff;
+            padding: 10px;
+        }
+        .dropdown-toggle::after {
+            float: right;
+            margin-top: 10px;
+        }
+    }
+}
+.content-left {
+    background: #f5f7fc;
+    padding: 40px;
+    line-height: 2;
+    label {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .date {
+        margin-bottom: 40px;
+        #amount {
+            outline: rgb(70, 63, 63);
+            border: #fff;
+            color: $lighttext;
+        }
+        .ui-widget {
+            font-size: 0.5rem;
+        }
+        .ui-widget-header {
+            background: $blue;
+        }
+        .ui-slider-handle {
+            margin-top: -0.1rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 2px solid $lightblue;
+        }
+    }
+}
+.employer__content-right {
+    .brands{
+        display: flex;
+        border: 1px solid #e0eef7;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 15px;
+        position: relative;
+        &:hover {
+            .brand-btn {
+                background: $blue;
+                color: #fff;
+            }
+            .jobs-bookmark {
+                opacity: 1;
+            }
+        }
+        &-logo {
+            width: 15%;
+            img {
+                width: 95px;
+                border-radius: 50%;
+                height: auto;
+            }
+        }
+        &-text {
+            width: 60%;
+            padding: 15px 15px 0;
+            a {
+                font-size: 18px;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: $lightblue;
+                }
+            }
+            .mini-text {
+                margin-top: 5px;
+                display: flex;
+                color: $lighttext;
+                i {
+                    margin-right: 10px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-btn {
+            padding:30px 0;
+            width: 25%;
+            text-align: right;
+            .brand-btn {
+                padding: 8px 20px;
+                background: #e7edf9;
+                border-radius: 20px;
+                text-decoration: none;
+                font-size: 13px !important;
+                transition: all 0.3s;
+            }
+        } 
+        .jobs-bookmark {
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+    }
+
+    .page-number {
+        margin-top: 40px;
+    }
+    .pagination {
+        justify-content: center;
+        .page-item {
+            margin: 0 10px;
+            &:hover {
+                .page-link {
+                    background: $blue;
+                    color: #fff;
+                }
+            }
+            .page-link {
+                padding: 12px 20px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
